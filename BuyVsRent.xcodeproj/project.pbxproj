@@ -10,6 +10,7 @@
 		630C99C51C0D8D900093870D /* HouseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C99C41C0D8D900093870D /* HouseTableCell.swift */; };
 		631DA6C11C0BE24500CE52EF /* RentCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DA6C01C0BE24500CE52EF /* RentCalculator.swift */; };
 		631DA6C31C0BF26700CE52EF /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DA6C21C0BF26700CE52EF /* BuyViewController.swift */; };
+		632903191C0E8A5000906A34 /* RentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632903181C0E8A5000906A34 /* RentViewController.swift */; };
 		634DC5021BE99AB400757904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634DC5011BE99AB400757904 /* AppDelegate.swift */; };
 		634DC5041BE99AB400757904 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634DC5031BE99AB400757904 /* ViewController.swift */; };
 		634DC5071BE99AB400757904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634DC5051BE99AB400757904 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		630C99C41C0D8D900093870D /* HouseTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseTableCell.swift; sourceTree = "<group>"; };
 		631DA6C01C0BE24500CE52EF /* RentCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentCalculator.swift; sourceTree = "<group>"; };
 		631DA6C21C0BF26700CE52EF /* BuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		632903181C0E8A5000906A34 /* RentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentViewController.swift; sourceTree = "<group>"; };
 		634DC4FE1BE99AB400757904 /* BuyVsRent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuyVsRent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		634DC5011BE99AB400757904 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		634DC5031BE99AB400757904 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6329031A1C0E9CD300906A34 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				634DC5031BE99AB400757904 /* ViewController.swift */,
+				631DA6C21C0BF26700CE52EF /* BuyViewController.swift */,
+				632903181C0E8A5000906A34 /* RentViewController.swift */,
+			);
+			name = viewControllers;
+			sourceTree = "<group>";
+		};
 		634DC4F51BE99AB400757904 = {
 			isa = PBXGroup;
 			children = (
@@ -106,10 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				634DC5011BE99AB400757904 /* AppDelegate.swift */,
-				634DC5031BE99AB400757904 /* ViewController.swift */,
-				631DA6C21C0BF26700CE52EF /* BuyViewController.swift */,
 				634DC5051BE99AB400757904 /* Main.storyboard */,
 				630C99C41C0D8D900093870D /* HouseTableCell.swift */,
+				6329031A1C0E9CD300906A34 /* viewControllers */,
 				634DC50B1BE99AB400757904 /* Assets.xcassets */,
 				634DC50D1BE99AB400757904 /* LaunchScreen.storyboard */,
 				631DA6C01C0BE24500CE52EF /* RentCalculator.swift */,
@@ -269,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				634DC5041BE99AB400757904 /* ViewController.swift in Sources */,
+				632903191C0E8A5000906A34 /* RentViewController.swift in Sources */,
 				631DA6C31C0BF26700CE52EF /* BuyViewController.swift in Sources */,
 				634DC50A1BE99AB400757904 /* BuyVsRent.xcdatamodeld in Sources */,
 				630C99C51C0D8D900093870D /* HouseTableCell.swift in Sources */,
