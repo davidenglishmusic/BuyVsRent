@@ -110,10 +110,10 @@
             </objects>
             <point key="canvasLocation" x="914" y="433"/>
         </scene>
-        <!--View Controller-->
+        <!--House View Controller-->
         <scene sceneID="F1h-Th-HDx">
             <objects>
-                <viewController id="RxP-md-rJx" sceneMemberID="viewController">
+                <viewController id="RxP-md-rJx" customClass="HouseViewController" customModule="BuyVsRent" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xdW-t8-7Qt"/>
                         <viewControllerLayoutGuide type="bottom" id="wre-xP-JHO"/>
@@ -122,8 +122,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wBA-bb-D61">
-                                <rect key="frame" x="20" y="135" width="560" height="351"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wBA-bb-D61">
+                                <rect key="frame" x="20" y="74" width="560" height="381"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jS2-SG-Jv2">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="51"/>
@@ -213,8 +213,30 @@
                                         </subviews>
                                         <animations/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggW-Qx-wbm">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tiV-uY-ulw">
                                         <rect key="frame" x="0.0" y="141" width="560" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygN-dA-FXD">
+                                                <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="6.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7fP-gI-WBx">
+                                                <rect key="frame" x="460" y="0.0" width="100" height="30"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="jEk-e8-QsX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggW-Qx-wbm">
+                                        <rect key="frame" x="0.0" y="171" width="560" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amortization (Years)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B49-sn-65J">
                                                 <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
@@ -236,7 +258,7 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XM7-ci-J5U">
-                                        <rect key="frame" x="0.0" y="171" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="201" width="560" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annual Appreciation (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbD-Gd-Q7Q">
                                                 <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
@@ -258,7 +280,7 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbi-Vr-XdD">
-                                        <rect key="frame" x="0.0" y="201" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="231" width="560" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annual Taxes ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUf-lX-X2a">
                                                 <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
@@ -280,7 +302,7 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVH-PK-pkK">
-                                        <rect key="frame" x="0.0" y="231" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="261" width="560" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annual Maintenance ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKX-qb-RKn">
                                                 <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
@@ -301,8 +323,30 @@
                                         </subviews>
                                         <animations/>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FjR-pt-GnT">
+                                        <rect key="frame" x="0.0" y="291" width="560" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annual Insurance ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfW-4e-jW7">
+                                                <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="500.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CXe-t4-YXh">
+                                                <rect key="frame" x="460" y="0.0" width="100" height="30"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="PuM-SQ-QOh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ZL-Ym-EGr">
-                                        <rect key="frame" x="0.0" y="261" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="321" width="560" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selling Costs (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPW-xx-Zid">
                                                 <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
@@ -324,7 +368,7 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tv6-YG-qe9">
-                                        <rect key="frame" x="0.0" y="291" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="351" width="560" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ownership Time (Years)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2S-gb-0vL">
                                                 <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
@@ -345,44 +389,60 @@
                                         </subviews>
                                         <animations/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FjR-pt-GnT">
-                                        <rect key="frame" x="0.0" y="321" width="560" height="30"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annual Insurance ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfW-4e-jW7">
-                                                <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="500.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CXe-t4-YXh">
-                                                <rect key="frame" x="460" y="0.0" width="100" height="30"/>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="PuM-SQ-QOh"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                            </textField>
-                                        </subviews>
-                                        <animations/>
-                                    </stackView>
                                 </subviews>
                                 <animations/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYY-WX-sAS">
+                                <rect key="frame" x="200" y="475" width="200" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEu-BH-Q2I">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="saveButtonPressed:" destination="RxP-md-rJx" eventType="touchUpInside" id="fba-GH-MPK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVI-3U-Q6p">
+                                        <rect key="frame" x="114" y="0.0" width="86" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Recommend"/>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="asl-k0-bAk"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.87058823529999996" green="0.88235294119999996" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="ZYY-WX-sAS" firstAttribute="top" secondItem="wBA-bb-D61" secondAttribute="bottom" constant="20" id="6R6-Tv-vWk"/>
+                            <constraint firstItem="ZYY-WX-sAS" firstAttribute="centerX" secondItem="Kr2-cC-RFc" secondAttribute="centerX" id="AJD-qr-RUt"/>
                             <constraint firstItem="wBA-bb-D61" firstAttribute="leading" secondItem="Kr2-cC-RFc" secondAttribute="leadingMargin" id="BHi-6J-bCI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wBA-bb-D61" secondAttribute="trailing" id="TKF-7p-Vac"/>
-                            <constraint firstItem="wBA-bb-D61" firstAttribute="centerY" secondItem="Kr2-cC-RFc" secondAttribute="centerY" id="sAL-4P-YcI"/>
+                            <constraint firstItem="wBA-bb-D61" firstAttribute="top" secondItem="xdW-t8-7Qt" secondAttribute="bottom" constant="10" id="tBL-dn-bYk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressField" destination="VJi-EE-fJp" id="ZcD-jx-agb"/>
+                        <outlet property="amortizationField" destination="8kp-Tq-i2V" id="arN-rQ-qUP"/>
+                        <outlet property="annualAppreciationField" destination="bLf-no-Iwv" id="Ben-pY-YgM"/>
+                        <outlet property="annualInsuranceField" destination="CXe-t4-YXh" id="bt5-eu-E2U"/>
+                        <outlet property="annualMaintenanceField" destination="dGQ-x4-Dqr" id="QoI-lB-r53"/>
+                        <outlet property="annualTaxesField" destination="KZV-Y3-qRi" id="z6O-gh-y4l"/>
+                        <outlet property="downPaymentField" destination="xsA-Vy-0ei" id="Tjj-1n-cUC"/>
+                        <outlet property="interestRateField" destination="7fP-gI-WBx" id="zqc-GY-uvV"/>
+                        <outlet property="mortgageAmountField" destination="6Uy-bk-EtN" id="tbB-zL-6fJ"/>
+                        <outlet property="ownershipTimeField" destination="5fb-fK-6p5" id="ebT-LE-3et"/>
+                        <outlet property="purchasePriceField" destination="VIB-cu-QAf" id="Kh4-Ga-ya6"/>
+                        <outlet property="sellingCostsField" destination="QHe-Ad-5IP" id="0x3-2e-G1u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RBN-HH-yV1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1690" y="497"/>
+            <point key="canvasLocation" x="1741" y="433"/>
         </scene>
         <!--Rent View Controller-->
         <scene sceneID="gPs-IH-aCI">

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
     <entity name="House" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="amortization" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="appreciationRate" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="annualAppreciation" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="annualInsurance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="annualMaintenance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="annualTaxes" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="downPayment" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="inflationRate" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="insurance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="maintenance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="mortgageInterestRate" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="propertyTax" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="sellingCostRate" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="time" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="interestRate" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mortgageAmount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ownershipTime" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="purchasePrice" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sellingCosts" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
     </entity>
     <entity name="Rent" syncable="YES">
         <attribute name="annualIncrease" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
@@ -19,7 +20,7 @@
         <attribute name="monthlyRent" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
     </entity>
     <elements>
-        <element name="House" positionX="-63" positionY="-18" width="128" height="210"/>
+        <element name="House" positionX="-63" positionY="-18" width="128" height="225"/>
         <element name="Rent" positionX="-54" positionY="72" width="128" height="90"/>
     </elements>
 </model>

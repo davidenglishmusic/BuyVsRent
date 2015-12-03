@@ -12,13 +12,13 @@
 		631DA6C31C0BF26700CE52EF /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DA6C21C0BF26700CE52EF /* BuyViewController.swift */; };
 		632903191C0E8A5000906A34 /* RentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632903181C0E8A5000906A34 /* RentViewController.swift */; };
 		634DC5021BE99AB400757904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634DC5011BE99AB400757904 /* AppDelegate.swift */; };
-		634DC5041BE99AB400757904 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634DC5031BE99AB400757904 /* ViewController.swift */; };
 		634DC5071BE99AB400757904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634DC5051BE99AB400757904 /* Main.storyboard */; };
 		634DC50A1BE99AB400757904 /* BuyVsRent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 634DC5081BE99AB400757904 /* BuyVsRent.xcdatamodeld */; };
 		634DC50C1BE99AB400757904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 634DC50B1BE99AB400757904 /* Assets.xcassets */; };
 		634DC50F1BE99AB400757904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634DC50D1BE99AB400757904 /* LaunchScreen.storyboard */; };
 		634DC51A1BE99AB500757904 /* BuyVsRentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634DC5191BE99AB500757904 /* BuyVsRentTests.swift */; };
 		634DC5251BE99AB500757904 /* BuyVsRentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634DC5241BE99AB500757904 /* BuyVsRentUITests.swift */; };
+		635AE1FA1C101DB2005AA40F /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635AE1F91C101DB2005AA40F /* HouseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,6 @@
 		632903181C0E8A5000906A34 /* RentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentViewController.swift; sourceTree = "<group>"; };
 		634DC4FE1BE99AB400757904 /* BuyVsRent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuyVsRent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		634DC5011BE99AB400757904 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		634DC5031BE99AB400757904 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		634DC5061BE99AB400757904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		634DC5091BE99AB400757904 /* BuyVsRent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BuyVsRent.xcdatamodel; sourceTree = "<group>"; };
 		634DC50B1BE99AB400757904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		634DC5201BE99AB500757904 /* BuyVsRentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuyVsRentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		634DC5241BE99AB500757904 /* BuyVsRentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyVsRentUITests.swift; sourceTree = "<group>"; };
 		634DC5261BE99AB500757904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		635AE1F91C101DB2005AA40F /* HouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +87,8 @@
 		6329031A1C0E9CD300906A34 /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				634DC5031BE99AB400757904 /* ViewController.swift */,
 				631DA6C21C0BF26700CE52EF /* BuyViewController.swift */,
+				635AE1F91C101DB2005AA40F /* HouseViewController.swift */,
 				632903181C0E8A5000906A34 /* RentViewController.swift */,
 			);
 			name = viewControllers;
@@ -279,10 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				634DC5041BE99AB400757904 /* ViewController.swift in Sources */,
 				632903191C0E8A5000906A34 /* RentViewController.swift in Sources */,
 				631DA6C31C0BF26700CE52EF /* BuyViewController.swift in Sources */,
 				634DC50A1BE99AB400757904 /* BuyVsRent.xcdatamodeld in Sources */,
+				635AE1FA1C101DB2005AA40F /* HouseViewController.swift in Sources */,
 				630C99C51C0D8D900093870D /* HouseTableCell.swift in Sources */,
 				631DA6C11C0BE24500CE52EF /* RentCalculator.swift in Sources */,
 				634DC5021BE99AB400757904 /* AppDelegate.swift in Sources */,
