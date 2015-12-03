@@ -61,7 +61,7 @@ class RentViewController: UIViewController {
             try managedContext.save()
             //5
             rents.append(rent)
-            print("Rent is saved")
+            displayRentSaveConfirmation()
         } catch let error as NSError  {
             print("Could not save \(error), \(error.userInfo)")
         }
@@ -113,6 +113,14 @@ class RentViewController: UIViewController {
         self.monthlyRentField.text = monthlyRent
         self.annualIncreaseField.text = annualIncrease
         self.investmentRateField.text = investmentRate
+    }
+    
+    func displayRentSaveConfirmation() {
+        let alertController = UIAlertController(title: "BuyVsRent", message:
+            "The rent information has been saved", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default,handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
 }
