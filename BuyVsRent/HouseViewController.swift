@@ -13,6 +13,8 @@ class HouseViewController: UIViewController {
     
     var houses = [NSManagedObject]()
     
+    var currentHouse = [NSManagedObject]()
+    
     @IBOutlet weak var addressField: UITextField!
     @IBOutlet weak var purchasePriceField: UITextField!
     @IBOutlet weak var downPaymentField: UITextField!
@@ -35,12 +37,31 @@ class HouseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if currentHouse.count > 0 {
+            setFields()
+        }
         // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setFields() {
+        let house = currentHouse[0]
+        addressField.text = String(house.valueForKey("address")!)
+        purchasePriceField.text = String(house.valueForKey("purchasePrice")!)
+        downPaymentField.text = String(house.valueForKey("downPayment")!)
+        mortgageAmountField.text = String(house.valueForKey("mortgageAmount")!)
+        interestRateField.text = String(house.valueForKey("interestRate")!)
+        amortizationField.text = String(house.valueForKey("amortization")!)
+        annualAppreciationField.text = String(house.valueForKey("annualAppreciation")!)
+        annualTaxesField.text = String(house.valueForKey("annualTaxes")!)
+        annualMaintenanceField.text = String(house.valueForKey("annualMaintenance")!)
+        annualInsuranceField.text = String(house.valueForKey("annualInsurance")!)
+        sellingCostsField.text = String(house.valueForKey("sellingCosts")!)
+        ownershipTimeField.text = String(house.valueForKey("ownershipTime")!)
     }
     
     func saveHouse(address: String, purchasePrice: Double, downPayment: Double, mortgageAmount: Double, interestRate: Double, amortization: Int, annualAppreciation: Double, annualTaxes: Double, annualMaintenance: Double, annualInsurance: Double, sellingCosts: Double, ownershipTime: Int) {

@@ -7,17 +7,35 @@
 //
 
 import UIKit
+import CoreData
 
 class BuyViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let reuseIdentifier = "House"
+    
+    var houses = [NSManagedObject]()
 
     @IBOutlet weak var houseTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         houseTable.delegate = self
         houseTable.dataSource = self
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext
+        
+        let fetchRequest = NSFetchRequest(entityName: "House")
+        
+        do {
+            let results =
+            try managedContext.executeFetchRequest(fetchRequest)
+            houses = results as! [NSManagedObject]
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -32,26 +50,26 @@ class BuyViewController: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return houses.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! HouseTableCell
         
-        cell.propertyLabel!.text = "312 West Marine Drive"
+        let house = houses[indexPath.row]
+        
+        cell.propertyLabel!.text = house.valueForKey("address") as? String
         
         return cell
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!){
+        if let houseViewController = segue.destinationViewController as? HouseViewController {
+            if houseTable.indexPathForSelectedRow?.row != nil {
+                let selectedRow = houseTable.indexPathForSelectedRow!.row
+                houseViewController.currentHouse = [houses[selectedRow]]
+            }
+        }
     }
-    */
 
 }
