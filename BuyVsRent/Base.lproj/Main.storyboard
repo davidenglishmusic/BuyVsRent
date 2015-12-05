@@ -416,13 +416,25 @@
                                     <constraint firstAttribute="width" constant="200" id="asl-k0-bAk"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ml-yr-5Z0">
+                                <rect key="frame" x="535" y="475" width="45" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" red="1" green="0.25490196078431371" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="respondToDeleteButton:" destination="RxP-md-rJx" eventType="touchUpInside" id="Dyh-yU-16B"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ZYY-WX-sAS" firstAttribute="top" secondItem="wBA-bb-D61" secondAttribute="bottom" constant="20" id="6R6-Tv-vWk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4ml-yr-5Z0" secondAttribute="trailing" id="6nr-8m-2uN"/>
                             <constraint firstItem="ZYY-WX-sAS" firstAttribute="centerX" secondItem="Kr2-cC-RFc" secondAttribute="centerX" id="AJD-qr-RUt"/>
                             <constraint firstItem="wBA-bb-D61" firstAttribute="leading" secondItem="Kr2-cC-RFc" secondAttribute="leadingMargin" id="BHi-6J-bCI"/>
+                            <constraint firstItem="4ml-yr-5Z0" firstAttribute="top" secondItem="wBA-bb-D61" secondAttribute="bottom" constant="20" id="LRh-fP-IjF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wBA-bb-D61" secondAttribute="trailing" id="TKF-7p-Vac"/>
                             <constraint firstItem="wBA-bb-D61" firstAttribute="top" secondItem="xdW-t8-7Qt" secondAttribute="bottom" constant="10" id="tBL-dn-bYk"/>
                         </constraints>
@@ -444,7 +456,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RBN-HH-yV1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741" y="433"/>
+            <point key="canvasLocation" x="1881" y="201"/>
         </scene>
         <!--Rent View Controller-->
         <scene sceneID="gPs-IH-aCI">

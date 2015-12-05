@@ -13,6 +13,8 @@ class HouseViewController: UIViewController {
     
     var houses = [NSManagedObject]()
     
+    var housesCheck = [NSManagedObject]()
+    
     var currentHouse = [NSManagedObject]()
     
     @IBOutlet weak var addressField: UITextField!
@@ -112,4 +114,36 @@ class HouseViewController: UIViewController {
         self.presentViewController(alertController, animated: true, completion: nil)
     }
 
+    func deleteHouse(){
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext
+        
+        let fetchRequest = NSFetchRequest(entityName: "House")
+        
+        do {
+            let results =
+            try managedContext.executeFetchRequest(fetchRequest)
+            houses = results as! [NSManagedObject]
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+        
+        managedContext.deleteObject(currentHouse[0])
+        do {
+            try managedContext.save()
+        } catch let error as NSError  {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+    }
+    
+    @IBAction func respondToDeleteButton(sender: AnyObject) {
+        if (currentHouse.count > 0) {
+            deleteHouse()
+            self.navigationController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+            if let navController = self.navigationController {
+                navController.popViewControllerAnimated(true)
+            }
+        }
+    }
 }
