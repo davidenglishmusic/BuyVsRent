@@ -64,10 +64,18 @@ class BuyViewController: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!){
-        if let houseViewController = segue.destinationViewController as? HouseViewController {
-            if houseTable.indexPathForSelectedRow?.row != nil {
-                let selectedRow = houseTable.indexPathForSelectedRow!.row
-                houseViewController.currentHouse = [houses[selectedRow]]
+        if (segue.identifier == "addNewProperty") {
+            if let houseViewController = segue.destinationViewController as? HouseViewController {
+                houseViewController.currentHouse = []
+            }
+        }
+        
+        else if (segue.identifier == "editProperty") {
+            if let houseViewController = segue.destinationViewController as? HouseViewController {
+                if houseTable.indexPathForSelectedRow?.row != nil {
+                    let selectedRow = houseTable.indexPathForSelectedRow!.row
+                    houseViewController.currentHouse = [houses[selectedRow]]
+                }
             }
         }
     }

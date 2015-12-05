@@ -75,7 +75,7 @@
                                         <connections>
                                             <outlet property="homeImage" destination="0l3-k9-YQL" id="Xrh-Dy-jGx"/>
                                             <outlet property="propertyLabel" destination="6c1-JB-Dvy" id="iHs-k9-IkG"/>
-                                            <segue destination="RxP-md-rJx" kind="show" id="dGa-qc-3Xo"/>
+                                            <segue destination="RxP-md-rJx" kind="show" identifier="editProperty" id="dGa-qc-3Xo"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -85,7 +85,7 @@
                                 <animations/>
                                 <state key="normal" title="Add a property"/>
                                 <connections>
-                                    <segue destination="RxP-md-rJx" kind="show" id="tWH-V4-cNj"/>
+                                    <segue destination="RxP-md-rJx" kind="show" identifier="addNewProperty" id="aWp-c4-hjf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -661,6 +661,6 @@
         <image name="RentIcon" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tWH-V4-cNj"/>
+        <segue reference="aWp-c4-hjf"/>
     </inferredMetricsTieBreakers>
 </document>
