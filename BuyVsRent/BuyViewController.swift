@@ -79,5 +79,28 @@ class BuyViewController: UIViewController, UITableViewDataSource, UITableViewDel
             }
         }
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        
+        houseTable.delegate = self
+        houseTable.dataSource = self
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext
+        
+        let fetchRequest = NSFetchRequest(entityName: "House")
+        
+        do {
+            let results =
+            try managedContext.executeFetchRequest(fetchRequest)
+            houses = results as! [NSManagedObject]
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+        
+        houseTable.reloadData()
+    }
 
 }
