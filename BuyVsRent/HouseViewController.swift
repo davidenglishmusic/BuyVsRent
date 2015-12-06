@@ -67,6 +67,11 @@ class HouseViewController: UIViewController {
     }
     
     func saveHouse(address: String, purchasePrice: Double, downPayment: Double, mortgageAmount: Double, interestRate: Double, amortization: Int, annualAppreciation: Double, annualTaxes: Double, annualMaintenance: Double, annualInsurance: Double, sellingCosts: Double, ownershipTime: Int) {
+        
+        if currentHouse != [] {
+            deleteHouse()
+        }
+        
         //1
         let appDelegate =
         UIApplication.sharedApplication().delegate as! AppDelegate
@@ -99,7 +104,17 @@ class HouseViewController: UIViewController {
         do {
             try managedContext.save()
             //5
+            
             houses.append(house)
+            
+            // setCurrentHouse
+            if currentHouse != [] {
+                currentHouse[0] = house
+            }
+            else {
+                currentHouse.append(house)
+            }
+            
             displayHouseSaveConfirmation()
         } catch let error as NSError  {
             print("Could not save \(error), \(error.userInfo)")
