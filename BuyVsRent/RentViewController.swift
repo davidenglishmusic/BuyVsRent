@@ -97,6 +97,7 @@ class RentViewController: UIViewController {
             let results =
             try managedContext.executeFetchRequest(fetchRequest)
             let answer = results as! [NSManagedObject]
+            print(answer[0])
             if answer == [] {
                 print("no rent entities currently exist")
             }

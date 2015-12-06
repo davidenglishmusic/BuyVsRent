@@ -146,4 +146,12 @@ class HouseViewController: UIViewController {
             }
         }
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!){
+        if (segue.identifier == "segueToRecommendation") {
+            if let recommendationViewController = segue.destinationViewController as? RecommendationViewController {
+                recommendationViewController.houses = currentHouse
+            }
+        }
+    }
 }
