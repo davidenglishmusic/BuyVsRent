@@ -595,7 +595,7 @@
                                                         <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="buy tf" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jh3-GB-Icj">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="buy mf" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jh3-GB-Icj">
                                                         <rect key="frame" x="100" y="0.0" width="100" height="21"/>
                                                         <animations/>
                                                         <constraints>
@@ -605,7 +605,7 @@
                                                         <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rent tf" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvb-Yt-wz1">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rent mf" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvb-Yt-wz1">
                                                         <rect key="frame" x="200" y="0.0" width="100" height="21"/>
                                                         <animations/>
                                                         <constraints>
@@ -875,7 +875,22 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buyMFLabel" destination="jh3-GB-Icj" id="vkO-CE-eDe"/>
+                        <outlet property="buyMPLabel" destination="GRm-YJ-TRx" id="1Po-WZ-ciW"/>
+                        <outlet property="buyMTLabel" destination="JR3-u4-Zx4" id="Phq-eG-gsh"/>
+                        <outlet property="buyMonthlyPaymentLable" destination="GRm-YJ-TRx" id="oHa-xA-cHo"/>
+                        <outlet property="buyYTLabel" destination="r69-6I-Mte" id="dR3-ne-3iZ"/>
+                        <outlet property="fhLabel" destination="Dr7-KE-hjb" id="JaY-Ra-CwU"/>
+                        <outlet property="fhvLabel" destination="UrF-4i-fPJ" id="Y0h-c9-XQG"/>
+                        <outlet property="fiLabel" destination="PcO-fs-qzH" id="7N3-qW-V4V"/>
                         <outlet property="recommendationLabel" destination="ctw-Pp-q8H" id="2mq-xV-Uup"/>
+                        <outlet property="rentMFLabel" destination="Wvb-Yt-wz1" id="hCY-Pv-Bg7"/>
+                        <outlet property="rentMPLabel" destination="2hI-Zw-X0V" id="qSN-Jd-dmU"/>
+                        <outlet property="rentMTLabel" destination="z11-sj-oBa" id="Ehc-4c-H1e"/>
+                        <outlet property="rentMonthlyPaymentLabel" destination="2hI-Zw-X0V" id="YRz-LW-vMj"/>
+                        <outlet property="rentYTLabel" destination="kE7-AH-2GM" id="wFs-a1-1Wr"/>
+                        <outlet property="rmvLabel" destination="0pv-Fo-oU0" id="PF9-Fn-MOM"/>
+                        <outlet property="scvLabel" destination="x1x-vJ-vi2" id="vnV-IC-2q8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b3t-Ms-wNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
