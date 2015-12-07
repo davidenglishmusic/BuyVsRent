@@ -11,6 +11,8 @@ import CoreData
 
 class HouseViewController: UIViewController {
     
+    let sharedApp = UIApplication.sharedApplication()
+    
     let roundHelper = 100.0
     
     var houses = [NSManagedObject]()
@@ -212,4 +214,20 @@ class HouseViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func respondToAddressTab(sender: AnyObject) {
+        print("responding")
+        let address = self.addressField.text!
+        print(address)
+        
+        if address != "" {
+            print("passedTest")
+            let baseGoogleMapsAddress = "https://www.google.ca/maps/place/"
+            let suffixURL = address.stringByReplacingOccurrencesOfString(" ", withString: "+")
+            let finalAddress = baseGoogleMapsAddress + suffixURL
+            print(finalAddress)
+            sharedApp.openURL(NSURL(string: finalAddress)!)
+            print("URL should have opened")
+        }
+    }
 }
