@@ -212,7 +212,7 @@
                                                     <constraint firstAttribute="width" constant="100" id="CB0-0W-cT7"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                         <animations/>

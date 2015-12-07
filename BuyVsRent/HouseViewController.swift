@@ -156,11 +156,7 @@ class HouseViewController: UIViewController {
     
     @IBAction func respondToDeleteButton(sender: AnyObject) {
         if (currentHouse.count > 0) {
-            deleteHouse()
-            self.navigationController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
-            if let navController = self.navigationController {
-                navController.popViewControllerAnimated(true)
-            }
+            confirmDelete()
         }
         else {
             let alertController = UIAlertController(title: "BuyVsRent", message:
@@ -169,6 +165,23 @@ class HouseViewController: UIViewController {
             
             self.presentViewController(alertController, animated: true, completion: nil)
         }
+    }
+    
+    func confirmDelete() {
+        let confirmAlert = UIAlertController(title: "BuyVsRent", message: "This house will be deleted.", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        confirmAlert.addAction(UIAlertAction(title: "Confirm Deletion", style: .Default, handler: { (action: UIAlertAction!) in
+            self.deleteHouse()
+            self.navigationController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+            if let navController = self.navigationController {
+                navController.popViewControllerAnimated(true)
+            }
+        }))
+        
+        confirmAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction!) in
+        }))
+        
+        presentViewController(confirmAlert, animated: true, completion: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!){
