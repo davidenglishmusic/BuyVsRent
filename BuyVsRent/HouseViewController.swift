@@ -11,6 +11,8 @@ import CoreData
 
 class HouseViewController: UIViewController {
     
+    let roundHelper = 100.0
+    
     var houses = [NSManagedObject]()
     
     var housesCheck = [NSManagedObject]()
@@ -191,4 +193,23 @@ class HouseViewController: UIViewController {
             }
         }
     }
+    
+    
+    @IBAction func respondToPurchasePriceField(sender: AnyObject) {
+        setMortgageField()
+    }
+    
+    @IBAction func respondToDownPaymentField(sender: AnyObject) {
+        setMortgageField()
+    }
+    
+    func setMortgageField() {
+        let purchasePrice = Double(self.purchasePriceField.text!)
+        let downPayment = Double(self.downPaymentField.text!)
+        
+        if (purchasePrice != nil && downPayment != nil) {
+            self.mortgageAmountField.text = String(round((purchasePrice! - downPayment!) * roundHelper / roundHelper))
+        }
+    }
+    
 }
