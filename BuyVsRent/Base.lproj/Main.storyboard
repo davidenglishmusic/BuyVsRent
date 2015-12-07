@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="OcX-XQ-Aqo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HouseIcon" translatesAutoresizingMaskIntoConstraints="NO" id="OcX-XQ-Aqo">
                                 <rect key="frame" x="268" y="99" width="64" height="64"/>
                                 <animations/>
                                 <color key="tintColor" red="0.45098039220000002" green="0.7843137255" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,7 +39,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="0l3-k9-YQL">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HouseIcon" translatesAutoresizingMaskIntoConstraints="NO" id="0l3-k9-YQL">
                                                     <rect key="frame" x="8" y="6" width="43" height="32"/>
                                                     <animations/>
                                                     <constraints>
@@ -57,7 +57,7 @@
                                                 </label>
                                             </subviews>
                                             <animations/>
-                                            <color key="backgroundColor" red="0.44313725490196076" green="0.61960784313725492" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.42745098039215684" green="0.46274509803921571" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="6c1-JB-Dvy" firstAttribute="leading" secondItem="0l3-k9-YQL" secondAttribute="trailing" id="6o5-qd-mlz"/>
                                                 <constraint firstItem="0l3-k9-YQL" firstAttribute="centerY" secondItem="f6N-pI-6FO" secondAttribute="centerY" id="b6W-il-NA9"/>
@@ -1061,7 +1061,7 @@
         <scene sceneID="EXf-vb-e5O">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PX7-Ln-sc8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Buy" image="HomeIcon" id="VON-lI-MT7"/>
+                    <tabBarItem key="tabBarItem" title="Buy" image="HouseTabIcon" id="VON-lI-MT7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qx6-Hg-M6u">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1100,7 +1100,7 @@
         <scene sceneID="ByJ-Pp-CLe">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Pl-Zb-fLg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Rent" image="RentIcon" id="CXG-tU-JrK"/>
+                    <tabBarItem key="tabBarItem" title="Rent" image="RentTabIcon" id="CXG-tU-JrK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z33-sB-f5G">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1118,8 +1118,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="HomeIcon" width="32" height="32"/>
-        <image name="RentIcon" width="32" height="32"/>
+        <image name="HouseIcon" width="60" height="60"/>
+        <image name="HouseTabIcon" width="20" height="20"/>
+        <image name="RentIcon" width="60" height="60"/>
+        <image name="RentTabIcon" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="aWp-c4-hjf"/>

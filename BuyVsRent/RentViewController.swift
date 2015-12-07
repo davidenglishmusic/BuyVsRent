@@ -24,6 +24,8 @@ class RentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Rental Information"
+        
         loadRent("Rent")
         // Do any additional setup after loading the view.
     }

@@ -39,6 +39,8 @@ class HouseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Property Information"
+        
         if currentHouse.count > 0 {
             setFields()
         }
@@ -159,6 +161,13 @@ class HouseViewController: UIViewController {
             if let navController = self.navigationController {
                 navController.popViewControllerAnimated(true)
             }
+        }
+        else {
+            let alertController = UIAlertController(title: "BuyVsRent", message:
+                "A house must be saved first before it can be deleted", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
         }
     }
     

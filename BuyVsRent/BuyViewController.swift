@@ -19,6 +19,7 @@ class BuyViewController: UIViewController, UITableViewDataSource, UITableViewDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Properties"
         
         houseTable.delegate = self
         houseTable.dataSource = self

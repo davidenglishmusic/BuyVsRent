@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyVsRent/RecommendationViewController.swift"
-            timestampString = "471125209.033704"
+            timestampString = "471145263.388149"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "calculateRemainingMortgage(_:)"
             landmarkType = "5">
          </BreakpointContent>

@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "rentIcon60.png",
+      "filename" : "houseIcon20.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "rentIcon120.png",
+      "filename" : "houseIcon40.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "rentIcon180.png",
+      "filename" : "houseIcon60.png",
       "scale" : "3x"
     }
   ],

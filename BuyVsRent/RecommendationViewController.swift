@@ -41,6 +41,7 @@ class RecommendationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Recommendation"
         
         loadRent("Rent")
         setLabels()
