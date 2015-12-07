@@ -127,20 +127,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wBA-bb-D61">
-                                <rect key="frame" x="20" y="74" width="560" height="381"/>
+                                <rect key="frame" x="150" y="74" width="300" height="381"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jS2-SG-Jv2">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="51"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="51"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5d-hW-eiq">
-                                                <rect key="frame" x="0.0" y="0.0" width="560" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="21"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="5363 Kew Cliff Road, West Vancouver" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VJi-EE-fJp">
-                                                <rect key="frame" x="0.0" y="21" width="560" height="30"/>
+                                                <rect key="frame" x="0.0" y="21" width="300" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -149,17 +149,17 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDa-oq-z3G">
-                                        <rect key="frame" x="0.0" y="51" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="51" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchase Price ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N70-u3-LB7">
-                                                <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="350000.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VIB-cu-QAf">
-                                                <rect key="frame" x="460" y="0.0" width="100" height="30"/>
+                                                <rect key="frame" x="200" y="0.0" width="100" height="30"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="EHY-bK-deK"/>
@@ -171,17 +171,17 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i59-Ld-1wB">
-                                        <rect key="frame" x="0.0" y="81" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="81" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Down Payment ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejd-ht-5KS">
-                                                <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="50000.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xsA-Vy-0ei">
-                                                <rect key="frame" x="460" y="0.0" width="100" height="30"/>
+                                                <rect key="frame" x="200" y="0.0" width="100" height="30"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="yiv-OF-JE0"/>
@@ -193,20 +193,20 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVt-85-7Xn">
-                                        <rect key="frame" x="0.0" y="111" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="111" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mortage Amount ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdQ-68-Xmc">
-                                                <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="300000.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Uy-bk-EtN">
-                                                <rect key="frame" x="460" y="0.0" width="100" height="30"/>
+                                                <rect key="frame" x="200" y="0.0" width="100" height="30"/>
                                                 <animations/>
                                                 <accessibility key="accessibilityConfiguration">
-                                                    <bool key="isElement" value="NO"/>
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
                                                 </accessibility>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="CB0-0W-cT7"/>
@@ -218,17 +218,17 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tiV-uY-ulw">
-                                        <rect key="frame" x="0.0" y="141" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="141" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygN-dA-FXD">
-                                                <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="6.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7fP-gI-WBx">
-                                                <rect key="frame" x="460" y="0.0" width="100" height="30"/>
+                                                <rect key="frame" x="200" y="0.0" width="100" height="30"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="jEk-e8-QsX"/>
@@ -240,17 +240,17 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggW-Qx-wbm">
-                                        <rect key="frame" x="0.0" y="171" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="171" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amortization (Years)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B49-sn-65J">
-                                                <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="25" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8kp-Tq-i2V">
-                                                <rect key="frame" x="460" y="0.0" width="100" height="30"/>
+                                                <rect key="frame" x="200" y="0.0" width="100" height="30"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="VFs-lZ-nuB"/>
@@ -262,17 +262,17 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XM7-ci-J5U">
-                                        <rect key="frame" x="0.0" y="201" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="201" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annual Appreciation (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbD-Gd-Q7Q">
-                                                <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLf-no-Iwv">
-                                                <rect key="frame" x="460" y="0.0" width="100" height="30"/>
+                                                <rect key="frame" x="200" y="0.0" width="100" height="30"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="2Ls-wz-neQ"/>
@@ -284,17 +284,17 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbi-Vr-XdD">
-                                        <rect key="frame" x="0.0" y="231" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="231" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annual Taxes ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUf-lX-X2a">
-                                                <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1000.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KZV-Y3-qRi">
-                                                <rect key="frame" x="460" y="0.0" width="100" height="30"/>
+                                                <rect key="frame" x="200" y="0.0" width="100" height="30"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="X7q-no-LXy"/>
@@ -306,17 +306,17 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVH-PK-pkK">
-                                        <rect key="frame" x="0.0" y="261" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="261" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annual Maintenance ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKX-qb-RKn">
-                                                <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1000.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dGQ-x4-Dqr">
-                                                <rect key="frame" x="460" y="0.0" width="100" height="30"/>
+                                                <rect key="frame" x="200" y="0.0" width="100" height="30"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="YKa-zy-CRY"/>
@@ -328,17 +328,17 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FjR-pt-GnT">
-                                        <rect key="frame" x="0.0" y="291" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="291" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annual Insurance ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfW-4e-jW7">
-                                                <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="500.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CXe-t4-YXh">
-                                                <rect key="frame" x="460" y="0.0" width="100" height="30"/>
+                                                <rect key="frame" x="200" y="0.0" width="100" height="30"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="PuM-SQ-QOh"/>
@@ -350,17 +350,17 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ZL-Ym-EGr">
-                                        <rect key="frame" x="0.0" y="321" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="321" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selling Costs (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPW-xx-Zid">
-                                                <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="5.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QHe-Ad-5IP">
-                                                <rect key="frame" x="460" y="0.0" width="100" height="30"/>
+                                                <rect key="frame" x="200" y="0.0" width="100" height="30"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="wug-uK-ppr"/>
@@ -372,17 +372,17 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tv6-YG-qe9">
-                                        <rect key="frame" x="0.0" y="351" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="351" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ownership Time (Years)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2S-gb-0vL">
-                                                <rect key="frame" x="0.0" y="0.0" width="460" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="10" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5fb-fK-6p5">
-                                                <rect key="frame" x="460" y="0.0" width="100" height="30"/>
+                                                <rect key="frame" x="200" y="0.0" width="100" height="30"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="ZQn-MJ-UlJ"/>
@@ -395,6 +395,21 @@
                                     </stackView>
                                 </subviews>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="ALz-fM-Yxg"/>
+                                    <constraint firstAttribute="width" constant="600" id="ewG-n8-ZyG"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ewG-n8-ZyG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="ALz-fM-Yxg"/>
+                                        <include reference="ewG-n8-ZyG"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYY-WX-sAS">
                                 <rect key="frame" x="200" y="475" width="200" height="30"/>
@@ -432,7 +447,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ml-yr-5Z0">
-                                <rect key="frame" x="535" y="475" width="45" height="30"/>
+                                <rect key="frame" x="278" y="525" width="45" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Delete">
                                     <color key="titleColor" red="1" green="0.25490196078431371" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
@@ -445,12 +460,11 @@
                         <animations/>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="wBA-bb-D61" firstAttribute="centerX" secondItem="Kr2-cC-RFc" secondAttribute="centerX" id="6Hz-Xv-2hy"/>
                             <constraint firstItem="ZYY-WX-sAS" firstAttribute="top" secondItem="wBA-bb-D61" secondAttribute="bottom" constant="20" id="6R6-Tv-vWk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4ml-yr-5Z0" secondAttribute="trailing" id="6nr-8m-2uN"/>
+                            <constraint firstItem="4ml-yr-5Z0" firstAttribute="top" secondItem="ZYY-WX-sAS" secondAttribute="bottom" constant="20" id="8J9-0J-88O"/>
                             <constraint firstItem="ZYY-WX-sAS" firstAttribute="centerX" secondItem="Kr2-cC-RFc" secondAttribute="centerX" id="AJD-qr-RUt"/>
-                            <constraint firstItem="wBA-bb-D61" firstAttribute="leading" secondItem="Kr2-cC-RFc" secondAttribute="leadingMargin" id="BHi-6J-bCI"/>
-                            <constraint firstItem="4ml-yr-5Z0" firstAttribute="top" secondItem="wBA-bb-D61" secondAttribute="bottom" constant="20" id="LRh-fP-IjF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wBA-bb-D61" secondAttribute="trailing" id="TKF-7p-Vac"/>
+                            <constraint firstItem="4ml-yr-5Z0" firstAttribute="centerX" secondItem="Kr2-cC-RFc" secondAttribute="centerX" id="Ecx-vH-3fb"/>
                             <constraint firstItem="wBA-bb-D61" firstAttribute="top" secondItem="xdW-t8-7Qt" secondAttribute="bottom" constant="10" id="tBL-dn-bYk"/>
                         </constraints>
                     </view>
@@ -504,11 +518,25 @@
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="KUf-0C-yqk"/>
-                                    <constraint firstAttribute="height" constant="50" id="OXk-EJ-Qzp"/>
+                                    <constraint firstAttribute="width" constant="600" id="L17-oL-3iL"/>
+                                    <constraint firstAttribute="height" constant="50" id="OXk-EJ-Qzp">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                                    </constraint>
                                 </constraints>
                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="L17-oL-3iL"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="KUf-0C-yqk"/>
+                                        <include reference="L17-oL-3iL"/>
+                                    </mask>
+                                </variation>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBS-LV-GSr">
                                 <rect key="frame" x="150" y="227" width="300" height="127"/>
@@ -523,17 +551,31 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
                                                         <animations/>
                                                         <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="ea0-mn-cPq"/>
                                                             <constraint firstAttribute="width" constant="100" id="gIp-Ll-1jJ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="ea0-mn-cPq"/>
+                                                            </mask>
+                                                        </variation>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <mask key="constraints">
+                                                                <include reference="ea0-mn-cPq"/>
+                                                                <exclude reference="gIp-Ll-1jJ"/>
+                                                            </mask>
+                                                        </variation>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Tl-3b-VaD">
                                                         <rect key="frame" x="100" y="0.0" width="100" height="17"/>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="xDs-6u-hgs"/>
+                                                            <constraint firstAttribute="width" constant="100" id="xDs-6u-hgs">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                            </constraint>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -543,7 +585,9 @@
                                                         <rect key="frame" x="200" y="0.0" width="100" height="17"/>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="3iI-Z4-3wd"/>
+                                                            <constraint firstAttribute="width" constant="100" id="3iI-Z4-3wd">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                            </constraint>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -559,7 +603,9 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="bDT-n4-aNT"/>
+                                                            <constraint firstAttribute="width" constant="100" id="bDT-n4-aNT">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                            </constraint>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -569,7 +615,9 @@
                                                         <rect key="frame" x="100" y="0.0" width="100" height="34"/>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="ZZ0-Ct-us8"/>
+                                                            <constraint firstAttribute="width" constant="100" id="ZZ0-Ct-us8">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                            </constraint>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -579,7 +627,9 @@
                                                         <rect key="frame" x="200" y="0.0" width="100" height="34"/>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="IMf-wH-1dU"/>
+                                                            <constraint firstAttribute="width" constant="100" id="IMf-wH-1dU">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                            </constraint>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -595,7 +645,9 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="21"/>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="eZ9-3l-Jld"/>
+                                                            <constraint firstAttribute="width" constant="100" id="eZ9-3l-Jld">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                            </constraint>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -605,7 +657,9 @@
                                                         <rect key="frame" x="100" y="0.0" width="100" height="21"/>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="idv-XB-ywc"/>
+                                                            <constraint firstAttribute="width" constant="100" id="idv-XB-ywc">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                            </constraint>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -615,7 +669,9 @@
                                                         <rect key="frame" x="200" y="0.0" width="100" height="21"/>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="6v7-2l-7oA"/>
+                                                            <constraint firstAttribute="width" constant="100" id="6v7-2l-7oA">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                            </constraint>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -631,7 +687,9 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="21"/>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="clL-Kg-Enh"/>
+                                                            <constraint firstAttribute="width" constant="100" id="clL-Kg-Enh">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                            </constraint>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -641,7 +699,9 @@
                                                         <rect key="frame" x="100" y="0.0" width="100" height="21"/>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="oMS-eY-5Es"/>
+                                                            <constraint firstAttribute="width" constant="100" id="oMS-eY-5Es">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                            </constraint>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -651,7 +711,9 @@
                                                         <rect key="frame" x="200" y="0.0" width="100" height="21"/>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="eXS-lt-tfF"/>
+                                                            <constraint firstAttribute="width" constant="100" id="eXS-lt-tfF">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                            </constraint>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -667,7 +729,9 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="mQv-6A-5ab"/>
+                                                            <constraint firstAttribute="width" constant="100" id="mQv-6A-5ab">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                            </constraint>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -677,7 +741,9 @@
                                                         <rect key="frame" x="100" y="0.0" width="100" height="34"/>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="zZ9-o6-dnk"/>
+                                                            <constraint firstAttribute="width" constant="100" id="zZ9-o6-dnk">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                            </constraint>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -687,7 +753,9 @@
                                                         <rect key="frame" x="200" y="0.0" width="100" height="34"/>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="k8L-6z-s3y"/>
+                                                            <constraint firstAttribute="width" constant="100" id="k8L-6z-s3y">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                            </constraint>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -701,6 +769,11 @@
                                     </stackView>
                                 </subviews>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="tc5-ke-8e4">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="600"/>
+                                    </constraint>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After X years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucb-0O-J37">
                                 <rect key="frame" x="258" y="364" width="84" height="17"/>
@@ -719,7 +792,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="21"/>
                                                 <animations/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="Z4L-Ij-rzl"/>
+                                                    <constraint firstAttribute="width" constant="150" id="Z4L-Ij-rzl">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -729,7 +804,9 @@
                                                 <rect key="frame" x="150" y="0.0" width="150" height="21"/>
                                                 <animations/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="UhB-bB-XDL"/>
+                                                    <constraint firstAttribute="width" constant="150" id="UhB-bB-XDL">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -745,7 +822,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="21"/>
                                                 <animations/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="bQu-0s-vul"/>
+                                                    <constraint firstAttribute="width" constant="150" id="bQu-0s-vul">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -755,7 +834,9 @@
                                                 <rect key="frame" x="150" y="0.0" width="150" height="21"/>
                                                 <animations/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="NV6-X3-LQ2"/>
+                                                    <constraint firstAttribute="width" constant="150" id="NV6-X3-LQ2">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -771,7 +852,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="21"/>
                                                 <animations/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="rHP-vh-0pN"/>
+                                                    <constraint firstAttribute="width" constant="150" id="rHP-vh-0pN">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -781,7 +864,9 @@
                                                 <rect key="frame" x="150" y="0.0" width="150" height="21"/>
                                                 <animations/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="esP-a8-ADH"/>
+                                                    <constraint firstAttribute="width" constant="150" id="esP-a8-ADH">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -792,6 +877,11 @@
                                     </stackView>
                                 </subviews>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="wJR-ZF-Kit">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="600"/>
+                                    </constraint>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SL6-pR-eZZ">
                                 <rect key="frame" x="150" y="491" width="300" height="42"/>
@@ -803,7 +893,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="21"/>
                                                 <animations/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="20J-G7-MCQ"/>
+                                                    <constraint firstAttribute="width" constant="150" id="20J-G7-MCQ">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -813,7 +905,9 @@
                                                 <rect key="frame" x="150" y="0.0" width="150" height="21"/>
                                                 <animations/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="7mn-Qa-bz4"/>
+                                                    <constraint firstAttribute="width" constant="150" id="7mn-Qa-bz4">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -829,7 +923,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="21"/>
                                                 <animations/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="FHR-JF-3Qv"/>
+                                                    <constraint firstAttribute="width" constant="150" id="FHR-JF-3Qv">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -839,7 +935,9 @@
                                                 <rect key="frame" x="150" y="0.0" width="150" height="21"/>
                                                 <animations/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="YjZ-gu-eA6"/>
+                                                    <constraint firstAttribute="width" constant="150" id="YjZ-gu-eA6">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -850,6 +948,11 @@
                                     </stackView>
                                 </subviews>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="23A-eH-n5X">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="600"/>
+                                    </constraint>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final values" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haW-v9-ASo">
                                 <rect key="frame" x="262" y="464" width="76" height="17"/>
@@ -862,14 +965,22 @@
                         <animations/>
                         <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="2WS-vh-tvr" firstAttribute="top" secondItem="ucb-0O-J37" secondAttribute="bottom" constant="10" id="75p-k8-2Zx"/>
-                            <constraint firstItem="ucb-0O-J37" firstAttribute="top" secondItem="aBS-LV-GSr" secondAttribute="bottom" constant="10" id="EqQ-UV-Rmp"/>
+                            <constraint firstItem="2WS-vh-tvr" firstAttribute="top" secondItem="ucb-0O-J37" secondAttribute="bottom" constant="10" id="75p-k8-2Zx">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="ucb-0O-J37" firstAttribute="top" secondItem="aBS-LV-GSr" secondAttribute="bottom" constant="10" id="EqQ-UV-Rmp">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="6YF-Xy-hDm" firstAttribute="centerX" secondItem="Gm8-Wh-Sdg" secondAttribute="centerX" id="J2I-eN-aWU"/>
                             <constraint firstItem="vKg-bF-zaD" firstAttribute="centerX" secondItem="Gm8-Wh-Sdg" secondAttribute="centerX" id="LGh-BH-J7j"/>
                             <constraint firstItem="6YF-Xy-hDm" firstAttribute="top" secondItem="ctw-Pp-q8H" secondAttribute="bottom" constant="15" id="OCA-fG-iUy"/>
                             <constraint firstItem="ctw-Pp-q8H" firstAttribute="top" secondItem="vKg-bF-zaD" secondAttribute="bottom" constant="15" id="PDh-xb-gCK"/>
-                            <constraint firstItem="SL6-pR-eZZ" firstAttribute="top" secondItem="haW-v9-ASo" secondAttribute="bottom" constant="10" id="Wbd-8L-3Jz"/>
-                            <constraint firstItem="aBS-LV-GSr" firstAttribute="top" secondItem="6YF-Xy-hDm" secondAttribute="bottom" constant="10" id="Y8O-6f-cdj"/>
+                            <constraint firstItem="SL6-pR-eZZ" firstAttribute="top" secondItem="haW-v9-ASo" secondAttribute="bottom" constant="10" id="Wbd-8L-3Jz">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="aBS-LV-GSr" firstAttribute="top" secondItem="6YF-Xy-hDm" secondAttribute="bottom" constant="10" id="Y8O-6f-cdj">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="ucb-0O-J37" firstAttribute="centerX" secondItem="Gm8-Wh-Sdg" secondAttribute="centerX" id="Y9v-fj-w7x"/>
                             <constraint firstItem="Jxd-8H-0Pd" firstAttribute="centerX" secondItem="Gm8-Wh-Sdg" secondAttribute="centerX" id="csK-XF-3Ol"/>
                             <constraint firstItem="aBS-LV-GSr" firstAttribute="centerX" secondItem="Gm8-Wh-Sdg" secondAttribute="centerX" id="lfm-8i-qfm"/>
@@ -877,7 +988,9 @@
                             <constraint firstItem="2WS-vh-tvr" firstAttribute="centerX" secondItem="Gm8-Wh-Sdg" secondAttribute="centerX" id="rVb-D9-Mes"/>
                             <constraint firstItem="vKg-bF-zaD" firstAttribute="top" secondItem="KMT-Uh-zzm" secondAttribute="bottom" constant="20" id="sFP-xh-DR2"/>
                             <constraint firstItem="ctw-Pp-q8H" firstAttribute="centerX" secondItem="Gm8-Wh-Sdg" secondAttribute="centerX" id="tBt-em-5Le"/>
-                            <constraint firstItem="haW-v9-ASo" firstAttribute="top" secondItem="2WS-vh-tvr" secondAttribute="bottom" constant="10" id="uW6-gz-0fg"/>
+                            <constraint firstItem="haW-v9-ASo" firstAttribute="top" secondItem="2WS-vh-tvr" secondAttribute="bottom" constant="10" id="uW6-gz-0fg">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
                         </constraints>
                     </view>
                     <connections>
@@ -925,31 +1038,47 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wlo-LE-h35">
-                                <rect key="frame" x="20" y="198" width="559" height="100"/>
+                                <rect key="frame" x="150" y="198" width="300" height="140"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="5jk-x9-zRL"/>
+                                    <constraint firstAttribute="height" constant="140" id="5jk-x9-zRL">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="300" id="i6T-cw-NvI"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="600" id="l4a-z9-0sL"/>
                                 </constraints>
-                                <string key="text">Enter your rent information here along with the expected rate of return on your down payment were you to use it as an investment. It will be compounded annually.</string>
+                                <string key="text">Enter your rent information here along with the expected rate of return on your down payment were you to use it as an investment. It will be compounded annually. If the year's rent payments are less than the combined mortgage and fee payments, the difference will be added in and compounded as well.</string>
                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="l4a-z9-0sL"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                    <rect key="frame" x="100" y="198" width="600" height="100"/>
+                                    <mask key="constraints">
+                                        <exclude reference="i6T-cw-NvI"/>
+                                        <include reference="l4a-z9-0sL"/>
+                                    </mask>
+                                </variation>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="3cH-7T-gUM">
-                                <rect key="frame" x="20" y="348" width="560" height="90"/>
+                                <rect key="frame" x="150" y="358" width="300" height="90"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="48a-Fx-P24">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Rent ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb8-oq-7lm">
-                                                <rect key="frame" x="0.0" y="4" width="440" height="22"/>
+                                                <rect key="frame" x="0.0" y="4" width="180" height="22"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1500.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DZm-g3-Oo1">
-                                                <rect key="frame" x="440" y="0.0" width="120" height="30"/>
+                                                <rect key="frame" x="180" y="0.0" width="120" height="30"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="gt6-fx-MAg"/>
@@ -964,17 +1093,17 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sp1-Hh-WbW">
-                                        <rect key="frame" x="0.0" y="30" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="30" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annual Increase (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqB-q8-6II">
-                                                <rect key="frame" x="0.0" y="0.0" width="440" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lyu-HF-ru5">
-                                                <rect key="frame" x="440" y="0.0" width="120" height="30"/>
+                                                <rect key="frame" x="180" y="0.0" width="120" height="30"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="xMB-S2-aI4"/>
@@ -986,17 +1115,17 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRa-dA-zkh">
-                                        <rect key="frame" x="0.0" y="60" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="60" width="300" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Investment Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOR-f1-Oip">
-                                                <rect key="frame" x="0.0" y="0.0" width="440" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="30"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="6.00" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xcM-wk-hK3">
-                                                <rect key="frame" x="440" y="0.0" width="120" height="30"/>
+                                                <rect key="frame" x="180" y="0.0" width="120" height="30"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="4Zv-yA-Vq7"/>
@@ -1012,15 +1141,28 @@
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="MRa-dA-zkh" secondAttribute="trailing" id="5u0-Yk-oqz"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="600" id="Cqe-7h-lfm"/>
                                     <constraint firstAttribute="trailing" secondItem="48a-Fx-P24" secondAttribute="trailing" id="GRS-Cf-T2j"/>
                                     <constraint firstItem="48a-Fx-P24" firstAttribute="leading" secondItem="3cH-7T-gUM" secondAttribute="leading" id="ZEE-fL-qbe"/>
                                     <constraint firstAttribute="trailing" secondItem="sp1-Hh-WbW" secondAttribute="trailing" id="aN4-mx-WuG"/>
                                     <constraint firstItem="MRa-dA-zkh" firstAttribute="leading" secondItem="3cH-7T-gUM" secondAttribute="leading" id="iOx-7f-gLR"/>
                                     <constraint firstItem="sp1-Hh-WbW" firstAttribute="leading" secondItem="3cH-7T-gUM" secondAttribute="leading" id="jan-qW-nV1"/>
+                                    <constraint firstAttribute="width" constant="300" id="sYT-rs-Ysc"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Cqe-7h-lfm"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Cqe-7h-lfm"/>
+                                        <exclude reference="sYT-rs-Ysc"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rF-jM-4u4">
-                                <rect key="frame" x="283" y="458" width="34" height="30"/>
+                                <rect key="frame" x="283" y="468" width="34" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" red="0.55294117649999996" green="0.77647058820000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1033,12 +1175,10 @@
                         <animations/>
                         <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="3cH-7T-gUM" secondAttribute="leading" id="0bW-hr-up6"/>
+                            <constraint firstItem="Wlo-LE-h35" firstAttribute="centerX" secondItem="QCW-sw-ayk" secondAttribute="centerX" id="9iq-jn-Sde"/>
                             <constraint firstItem="7rF-jM-4u4" firstAttribute="centerX" secondItem="QCW-sw-ayk" secondAttribute="centerX" id="Jld-aK-GAD"/>
-                            <constraint firstItem="Wlo-LE-h35" firstAttribute="leading" secondItem="QCW-sw-ayk" secondAttribute="leadingMargin" id="Kqv-w1-kV8"/>
-                            <constraint firstItem="Wlo-LE-h35" firstAttribute="trailing" secondItem="QCW-sw-ayk" secondAttribute="trailingMargin" constant="-1" id="Q2l-BP-VIz"/>
-                            <constraint firstItem="3cH-7T-gUM" firstAttribute="top" secondItem="Wlo-LE-h35" secondAttribute="bottom" constant="50" id="UxA-Mh-BaI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3cH-7T-gUM" secondAttribute="trailing" id="Xts-R6-jRy"/>
+                            <constraint firstItem="3cH-7T-gUM" firstAttribute="top" secondItem="Wlo-LE-h35" secondAttribute="bottom" constant="20" id="UxA-Mh-BaI"/>
+                            <constraint firstItem="3cH-7T-gUM" firstAttribute="centerX" secondItem="QCW-sw-ayk" secondAttribute="centerX" id="Wus-Ft-WEW"/>
                             <constraint firstItem="Wlo-LE-h35" firstAttribute="top" secondItem="CLI-Om-NcM" secondAttribute="bottom" constant="35" id="fTx-UP-dBz"/>
                             <constraint firstItem="CLI-Om-NcM" firstAttribute="top" secondItem="x7P-bh-QVY" secondAttribute="bottom" constant="35" id="hrp-uv-t9g"/>
                             <constraint firstItem="CLI-Om-NcM" firstAttribute="centerX" secondItem="QCW-sw-ayk" secondAttribute="centerX" id="itG-gU-RoY"/>
