@@ -270,4 +270,10 @@ class HouseViewController: UIViewController {
         }
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        
+        loadRent()
+    }
+    
 }
