@@ -447,7 +447,7 @@
                                             <color key="titleColor" red="0.55294117649999996" green="0.77647058820000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Lhg-BO-ZGs" kind="show" identifier="segueToRecommendation" id="dXx-6h-A3x"/>
+                                            <action selector="respondToRecommendationButton:" destination="RxP-md-rJx" eventType="touchUpInside" id="ZKB-rW-ZVC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -494,11 +494,12 @@
                         <outlet property="ownershipTimeField" destination="5fb-fK-6p5" id="ebT-LE-3et"/>
                         <outlet property="purchasePriceField" destination="VIB-cu-QAf" id="Kh4-Ga-ya6"/>
                         <outlet property="sellingCostsField" destination="QHe-Ad-5IP" id="0x3-2e-G1u"/>
+                        <segue destination="Lhg-BO-ZGs" kind="show" identifier="segueToRecommendation" id="nhk-5R-iMj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RBN-HH-yV1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1881" y="201"/>
+            <point key="canvasLocation" x="1983" y="241"/>
         </scene>
         <!--Recommendation View Controller-->
         <scene sceneID="TX0-Gs-fMo">
@@ -1022,7 +1023,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b3t-Ms-wNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2616" y="462"/>
+            <point key="canvasLocation" x="2850" y="470"/>
         </scene>
         <!--Rent View Controller-->
         <scene sceneID="gPs-IH-aCI">

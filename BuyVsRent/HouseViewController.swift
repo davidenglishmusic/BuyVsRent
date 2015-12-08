@@ -230,4 +230,18 @@ class HouseViewController: UIViewController {
             print("URL should have opened")
         }
     }
+    
+    @IBAction func respondToRecommendationButton(sender: AnyObject) {
+        if (currentHouse.count > 0) {
+            self.performSegueWithIdentifier("segueToRecommendation", sender: self)
+        }
+        else {
+            let alertController = UIAlertController(title: "BuyVsRent", message:
+                "A house must be saved first before a recommendation can be made", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+    }
+    
 }
