@@ -42,13 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyVsRent/RecommendationViewController.swift"
-            timestampString = "471305670.826532"
+            timestampString = "471306546.64132"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
-            landmarkName = "calculateRemainingMortgage(_:)"
-            landmarkType = "5">
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "RecommendationViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyVsRent/HouseViewController.swift"
-            timestampString = "471304750.918742"
+            timestampString = "471307334.632111"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "233"
-            endingLineNumber = "233"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
             landmarkName = "HouseViewController"
             landmarkType = "3">
          </BreakpointContent>

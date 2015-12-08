@@ -43,7 +43,6 @@ class RecommendationViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Recommendation"
         
-        loadRent("Rent")
         setLabels()
         // Do any additional setup after loading the view.
     }
@@ -51,29 +50,6 @@ class RecommendationViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func loadRent(entity: String) {
-        //1
-        let appDelegate =
-        UIApplication.sharedApplication().delegate as! AppDelegate
-        
-        let managedContext = appDelegate.managedObjectContext
-        
-        //2
-        let fetchRequest = NSFetchRequest(entityName: entity)
-        
-        //3
-        do {
-            let results =
-            try managedContext.executeFetchRequest(fetchRequest)
-            rents = results as! [NSManagedObject]
-            if rents == [] {
-                print("no rent entities currently exist")
-            }
-        } catch let error as NSError {
-            print("Could not fetch \(error), \(error.userInfo)")
-        }
     }
     
     func setLabels() {

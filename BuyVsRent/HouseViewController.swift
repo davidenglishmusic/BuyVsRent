@@ -17,7 +17,7 @@ class HouseViewController: UIViewController {
     
     var houses = [NSManagedObject]()
     
-    var housesCheck = [NSManagedObject]()
+    var rents = [NSManagedObject]()
     
     var currentHouse = [NSManagedObject]()
     
@@ -48,6 +48,8 @@ class HouseViewController: UIViewController {
         if currentHouse.count > 0 {
             setFields()
         }
+        
+        loadRent()
         // Do any additional setup after loading the view.
     }
     
@@ -191,6 +193,7 @@ class HouseViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!){
         if (segue.identifier == "segueToRecommendation") {
             if let recommendationViewController = segue.destinationViewController as? RecommendationViewController {
+                recommendationViewController.rents = rents
                 recommendationViewController.houses = currentHouse
             }
         }
@@ -232,15 +235,38 @@ class HouseViewController: UIViewController {
     }
     
     @IBAction func respondToRecommendationButton(sender: AnyObject) {
-        if (currentHouse.count > 0) {
+        if (currentHouse.count > 0 && rents.count > 0) {
             self.performSegueWithIdentifier("segueToRecommendation", sender: self)
         }
         else {
             let alertController = UIAlertController(title: "BuyVsRent", message:
-                "A house must be saved first before a recommendation can be made", preferredStyle: UIAlertControllerStyle.Alert)
+                "Both the rent and the house must be saved first before a recommendation can be made", preferredStyle: UIAlertControllerStyle.Alert)
             alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default,handler: nil))
             
             self.presentViewController(alertController, animated: true, completion: nil)
+        }
+    }
+    
+    func loadRent() {
+        //1
+        let appDelegate =
+        UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext
+        
+        //2
+        let fetchRequest = NSFetchRequest(entityName: "Rent")
+        
+        //3
+        do {
+            let results =
+            try managedContext.executeFetchRequest(fetchRequest)
+            rents = results as! [NSManagedObject]
+            if rents == [] {
+                print("no rent entities currently exist")
+            }
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
         }
     }
     
